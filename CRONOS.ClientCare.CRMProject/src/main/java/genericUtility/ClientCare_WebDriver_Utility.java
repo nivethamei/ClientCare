@@ -153,9 +153,9 @@ public class ClientCare_WebDriver_Utility {
 	public void switchToWindow(WebDriver driver,String PartialTitle)
 	{
 		Set<String> allwindow = driver.getWindowHandles();
-	    for(String windowid:allwindow)
+	    for(String window:allwindow)
 	    {
-	    	driver.switchTo().window(windowid);
+	    	driver.switchTo().window(window);
 	    	String actualResult = driver.getTitle();
 	    	if(actualResult.contains(PartialTitle))
 	    	{
