@@ -60,7 +60,7 @@ public class ClientCare_BaseClass {
 	
 	@AfterMethod
 	public void afterMethodConfiguration() {
-		
+		System.out.println("logout is done");
 		
 	}
 	
